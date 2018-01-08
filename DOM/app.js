@@ -22,6 +22,7 @@ var block = document.getElementsByTagName('blockquote')[0];
 block.classList.add("bg-white");
 console.log(block);
 
+
 //EXERCICE 2
 
 var table = document.querySelector('#my-table');
@@ -38,3 +39,6 @@ for(i = 0; i<queryAll.length; i++){
 
 //EXERCICE 3
 
+var pre = document.querySelector('pre');
+pre.style.color = '#ffff00';
+pre.style.backgroundColor = '#008000';

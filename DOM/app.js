@@ -84,3 +84,18 @@ for (var i = 0; i < olaLength; i++){
 // while (ola.hasChildNodes()){
 // 	ola.removeChild(ola.firstChild)
 // }
+
+var jeux = ["Silent Teacher","Code Monkey", "CodeCombat"];
+
+for(i = 0; i < jeux.length; i++){
+	var listeJeu = document.createElement('li'); //crée les li
+	listeJeu.innerText = jeux[i]; //dans chaque li met le texte de chaque valeur du tableau
+
+	ola.appendChild(listeJeu); //Ajoute li+texte dans ol
+}
+
+/*
+for(i = 0; i < jeux.length; i++){
+	ola.innerHTML += '<li>'+jeux[i]+'</li>';
+}
+*/

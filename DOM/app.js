@@ -70,8 +70,17 @@ document.querySelector('li > a').style.textDecoration = 'none';
 var ola = document.querySelectorAll('ol')[0];
 //NB : si je veux sélectionner un 'ol' à la position i mettre [i] -> ne fonctionne qu'avec SelectorAll
 
-//ola.removeChild(ola.childNodes[0]);
+console.log(ola.children); //-> [li, li] Children ne prend en compte que les éléments qui ressemblent au parent à la différence de childNodes[]
 
-for (var i = 0 ; i < ola.children.length; i++){
-	ola.removeChild(ola.childNodes[i]);
+var olaLength = ola.children.length;
+// Il faut déclarer la longueur avant, pcq quand il terminera la 1ère boucle, il supprimera un élément.
+
+for (var i = 0; i < olaLength; i++){
+	ola.removeChild(ola.children[0]);
+	// il faut laisser children[0]; pcq quand la 1ère boucle sera terminée, la position [1] du children deviendra [0]
 }
+
+// Autre méthode pour enlever tous les éléments child d'un parent
+// while (ola.hasChildNodes()){
+// 	ola.removeChild(ola.firstChild)
+// }

@@ -67,5 +67,11 @@ document.querySelector('li > a').style.textDecoration = 'none';
 
 //EXERCICE 4 : Création et suppression de plusieurs éléments
 
-document.querySelectorAll('ol')[0];
+var ola = document.querySelectorAll('ol')[0];
 //NB : si je veux sélectionner un 'ol' à la position i mettre [i] -> ne fonctionne qu'avec SelectorAll
+
+//ola.removeChild(ola.childNodes[0]);
+
+for (var i = 0 ; i < ola.children.length; i++){
+	ola.removeChild(ola.childNodes[i]);
+}

@@ -29,7 +29,7 @@ var table = document.querySelector('#my-table');
 table.classList.add("bg-purple");
 
 var queryAll = document.querySelectorAll('.container > p');
-//Sélectionne tous les 'p' contenus dans la cass .container
+//Sélectionne tous les 'p' contenus dans la class .container
 console.log(queryAll);
 
 for(i = 0; i<queryAll.length; i++){
@@ -42,3 +42,30 @@ for(i = 0; i<queryAll.length; i++){
 var pre = document.querySelector('pre');
 pre.style.color = '#ffff00';
 pre.style.backgroundColor = '#008000';
+pre.style.borderTop = '3px solid red';
+pre.style.borderBottom = '3px solid red';
+
+document.getElementsByTagName('h3')[0].innerHTML = '<em>Itelic title ! yeah !</em>';
+document.querySelector('h2').innerText = "<strong>HTML doens't work !</strong>";
+
+//EXERCICE 4 : création d'élément
+
+var premierUl = document.querySelector('ul'); //!!! querySelector sélectionne le premier élément spécifié
+var meilleurAmi = document.createElement('li'); //création du 'li'
+var link = document.createElement('a'); //création du 'a'
+link.href = 'http://www.google.com'; //ajout de href dans 'a'
+link.target = '_blank'; //ajout de target = _blank
+link.innerHTML = 'Google'; // ajout du texte dans la balise 'a'
+
+meilleurAmi.innerText = "Mon meilleur ami est ";
+
+meilleurAmi.appendChild(link);
+premierUl.appendChild(meilleurAmi);
+
+document.querySelector('li > a').style.color = '#ff0066';
+document.querySelector('li > a').style.textDecoration = 'none';
+
+//EXERCICE 4 : Création et suppression de plusieurs éléments
+
+document.querySelectorAll('ol')[0];
+//NB : si je veux sélectionner un 'ol' à la position i mettre [i] -> ne fonctionne qu'avec SelectorAll

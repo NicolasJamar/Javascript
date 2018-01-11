@@ -31,18 +31,6 @@ ctx.fillRect(180,20,80,150);
 
 //DRAPEAU Algérie
 
-ctx2.beginPath();
-ctx2.arc(140,273,50,0,Math.PI*2,true);
-ctx2.fillStyle = "red";
-ctx2.fill();
-
-ctx.beginPath();
-ctx.arc(153,273,39,0,Math.PI*2,true);
-ctx.fillStyle = "white";
-ctx.fill();
-
-ctx.globalCompositeOperation='destination-over';
-
 ctx.fillStyle = "#32CD32";
 ctx.fillRect(20,200,120,150);
 
@@ -55,6 +43,23 @@ ctx.lineWidth = 0.3;
 ctx.strokeStyle = "black";
 ctx.stroke();
 
+ctx2.beginPath();
+ctx2.arc(140,273,50,0,Math.PI*2,true);
+ctx2.fillStyle = "red";
+ctx2.fill();
+
+ctx.beginPath();
+ctx.arc(153,273,39,0,Math.PI*2,true);
+ctx.fillStyle = "white";
+ctx.fill();
+
+
+
+//demi-cercle vert
+ctx.beginPath();
+ctx.arc(140,273,34,Math.PI*0.5,Math.PI*1.5,false);
+ctx.fillStyle = "#32CD32";
+ctx.fill();
 
 
 //ctx2.globalCompositeOperation = 'source-atop';

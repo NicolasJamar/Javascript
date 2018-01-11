@@ -53,19 +53,34 @@ ctx.arc(153,273,39,0,Math.PI*2,true);
 ctx.fillStyle = "white";
 ctx.fill();
 
-
-
-//demi-cercle vert
 ctx.beginPath();
-ctx.arc(140,273,34,Math.PI*0.5,Math.PI*1.5,false);
+ctx.moveTo(140,236);
+ctx.quadraticCurveTo(85,272,140,310);
+ctx.lineTo(140,236);
+ctx.closePath();
 ctx.fillStyle = "#32CD32";
 ctx.fill();
 
+ctx.beginPath();
+ctx.moveTo(340,236);
+ctx.arcTo(285,300,340,310,50);
+ctx.lineTo(340,236);
+//ctx.closePath();
+ctx.lineWidth = 2;
+ctx.strokeStyle = "black";
+ctx.stroke();
+// ctx.fillStyle = "#32CD32";
+// ctx.fill();
+
+
+//demi-cercle vert
+// ctx.beginPath();
+// ctx.arc(140,273,34,Math.PI*0.5,Math.PI*1.5,false);
+// ctx.fillStyle = "#32CD32";
+// ctx.fill();
+
 
 //ctx2.globalCompositeOperation = 'source-atop';
-
-
-
 
 
 // Etoile

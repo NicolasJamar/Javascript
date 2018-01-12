@@ -32,7 +32,7 @@ ctx.fillRect(180,20,80,150);
 //DRAPEAU Algérie
 
 // Rectangle vert à gauche
-ctx.fillStyle = "#32CD32";
+ctx.fillStyle = "#00b300";
 ctx.fillRect(20,200,120,150);
 
 // cadre rectange blanc à droite
@@ -63,35 +63,42 @@ ctx.arcTo(40,273,140,310,39);  // (jouer avec, à mis distance de y de moveTo et
 ctx.lineTo(140,310); // la position finale de l'arc (!!! idem que dans arcTo)
 ctx.lineTo(140,236);
 ctx.closePath();
-// ctx.lineWidth = 1;
-// ctx.strokeStyle = "black";
-// ctx.stroke();
-ctx.fillStyle = "#32CD32";
+ctx.fillStyle = "#00b300";
 ctx.fill();
 
 // Etoile
+
+ctx.translate(140,260);
+ctx.rotate(15*Math.PI/180);
+ctx.translate(-140,-260);
 ctx.beginPath();
 ctx.moveTo(140, 260);
-ctx.lineTo(190, 280);
-ctx.lineTo(157, 285);
+ctx.lineTo(188, 260);
+ctx.lineTo(164, 280);
 ctx.closePath();
 ctx.fillStyle = "red";
 ctx.fill();
 
-
+ctx.translate(164,268);
+ctx.rotate(72*Math.PI/180);
+ctx.translate(-164,-268);
 ctx.beginPath();
-ctx.moveTo(170, 253);
-ctx.lineTo(170, 300);
-ctx.lineTo(153, 275);
+ctx.moveTo(140, 260);
+ctx.lineTo(188, 260);
+ctx.lineTo(164, 280);
 ctx.closePath();
 ctx.fillStyle = "red";
 ctx.fill();
 
-
+ctx.translate(164,268);
+ctx.rotate(72*Math.PI/180);
+ctx.translate(-164,-268);
 ctx.beginPath();
-ctx.moveTo(140, 291);
-ctx.lineTo(170, 253);
-ctx.lineTo(170, 280);
+ctx.moveTo(140, 260);
+ctx.lineTo(188, 260);
+ctx.lineTo(164, 280);
 ctx.closePath();
 ctx.fillStyle = "red";
 ctx.fill();
+
+

@@ -31,9 +31,11 @@ ctx.fillRect(180,20,80,150);
 
 //DRAPEAU Algérie
 
+// Rectangle vert à gauche
 ctx.fillStyle = "#32CD32";
 ctx.fillRect(20,200,120,150);
 
+// cadre rectange blanc à droite
 ctx.beginPath();
 ctx.moveTo(140,200);
 ctx.lineTo(260,200);
@@ -43,59 +45,53 @@ ctx.lineWidth = 0.3;
 ctx.strokeStyle = "black";
 ctx.stroke();
 
+// rond rouge
 ctx2.beginPath();
 ctx2.arc(140,273,50,0,Math.PI*2,true);
 ctx2.fillStyle = "red";
 ctx2.fill();
 
-//ctx.globalCompositeOperation = "destination-over";
 ctx.beginPath();
 ctx.arc(153,273,39,0,Math.PI*2,true);
 ctx.fillStyle = "white";
 ctx.fill();
 
+// partie verte dans le croissant 
+ctx.beginPath();
+ctx.moveTo(140,236);
+ctx.arcTo(40,273,140,310,39);  // (jouer avec, à mis distance de y de moveTo et lineTo)
+ctx.lineTo(140,310); // la position finale de l'arc (!!! idem que dans arcTo)
+ctx.lineTo(140,236);
+ctx.closePath();
+// ctx.lineWidth = 1;
+// ctx.strokeStyle = "black";
+// ctx.stroke();
+ctx.fillStyle = "#32CD32";
+ctx.fill();
 
-// demi-cercle vert
-// ctx.beginPath();
-// ctx.arc(140,273,34,Math.PI*0.5,Math.PI*1.5,false);
-// ctx.fillStyle = "#32CD32";
-// ctx.fill();
+// Etoile
+ctx.beginPath();
+ctx.moveTo(140, 260);
+ctx.lineTo(190, 280);
+ctx.lineTo(157, 285);
+ctx.closePath();
+ctx.fillStyle = "red";
+ctx.fill();
 
 
 ctx.beginPath();
-ctx.moveTo(140,236);
-ctx.arcTo(50,274,140,310,39);  // (jouer avec, à mis distance de y de moveTo et lineTo)
-ctx.lineTo(140,310); // la position finale de l'arc (!!! idem que dans arcTo)
-//ctx.closePath();
-ctx.lineWidth = 1;
-ctx.strokeStyle = "black";
-ctx.stroke();
-// ctx.fillStyle = "#32CD32";
-// ctx.fill();
+ctx.moveTo(170, 253);
+ctx.lineTo(170, 300);
+ctx.lineTo(153, 275);
+ctx.closePath();
+ctx.fillStyle = "red";
+ctx.fill();
 
 
-//demi-cercle vert
-// ctx.beginPath();
-// ctx.arc(140,273,34,Math.PI*0.5,Math.PI*1.5,false);
-// ctx.fillStyle = "#32CD32";
-// ctx.fill();
-
-
-//ctx2.globalCompositeOperation = 'source-atop';
-
-
-// Etoile
-// ctx.fillStyle = "gold";
-
-// var x = 50;
-// var y = 100;
-// var size = 100;
-
-// ctx.beginPath();
-// ctx.moveTo(x, y);
-// ctx.lineTo(x + size, y);
-// ctx.lineTo(x + size * 0.15, y + size * 0.5);
-// ctx.lineTo(x + size / 2, y - size * 0.4);
-// ctx.lineTo(x + size * 0.85, y + size * 0.5);
-// ctx.lineTo(x, y);
-// ctx.fill();
+ctx.beginPath();
+ctx.moveTo(140, 291);
+ctx.lineTo(170, 253);
+ctx.lineTo(170, 280);
+ctx.closePath();
+ctx.fillStyle = "red";
+ctx.fill();

@@ -63,11 +63,11 @@ ctx.fill();
 
 
 ctx.beginPath();
-ctx.moveTo(340,236);
-ctx.arcTo(285,300,340,310,50);
-ctx.lineTo(340,236);
+ctx.moveTo(140,236);
+ctx.arcTo(50,274,140,310,39);  // (jouer avec, à mis distance de y de moveTo et lineTo)
+ctx.lineTo(140,310); // la position finale de l'arc (!!! idem que dans arcTo)
 //ctx.closePath();
-ctx.lineWidth = 2;
+ctx.lineWidth = 1;
 ctx.strokeStyle = "black";
 ctx.stroke();
 // ctx.fillStyle = "#32CD32";

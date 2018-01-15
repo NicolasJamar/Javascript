@@ -1,0 +1,46 @@
+/*
+Exercice : PNJ (Personnage non-joueur)
+
+    Crée un objet "Character" qui contient les informations suivantes :
+
+    name (string)
+
+    age (numero)
+
+    items_to_give (tableau)
+
+    afficher chaque information sur une ligne séparés dans la console (for in)
+
+    faire une fonction "giveItem" qui permet au PNJ de donner un objet aléatoirement
+*/
+
+var character = { name: "Johnny", age: 77, items_to_give : ["Allumer le feu", "Tennessee", "Laura"] };
+var john = "";
+
+
+for(var info in character){
+  john += character[info] + " ";
+};
+
+console.log(john);
+/*
+Exercice : Shop
+
+Crée un tableau avec des objets à vendre (épée, hache, sceptre, etc.)
+
+Caractéristique de chaque objet :
+
+    title (string)
+    physic (int)
+    magic (int)
+    minLevel (int)
+    available (boolean)
+
+Manipulation :
+
+    faire une fonction pour afficher tout les objets
+    faire une fonction pour afficher les objets disponibles
+    faire une fonction pour afficher les objets dont le niveau minimum est de 10
+*/
+
+var objets = [ {title : "", physic: 0, magic: 0}, ]

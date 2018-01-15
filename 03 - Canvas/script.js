@@ -16,7 +16,7 @@ var ctx2 = c.getContext("2d");
 // ctx.fill();
 // ctx.stroke();
 
-//DRAPEAU Belgique
+//DRAPEAU BELGIQUE
 //bandeau noir
 ctx.fillStyle = "black"; //! d'abord définir le style
 ctx.fillRect(20,20,80,150); //! ensuite, appeler la function -> fillRect() appelle la function rectangle
@@ -29,8 +29,7 @@ ctx.fillRect(100,20,80,150);
 ctx.fillStyle = "red";
 ctx.fillRect(180,20,80,150);
 
-//DRAPEAU Algérie
-
+//DRAPEAU ALGERIE
 // Rectangle vert à gauche
 ctx.fillStyle = "#00b300";
 ctx.fillRect(20,200,120,150);

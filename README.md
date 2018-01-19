@@ -1,7 +1,7 @@
 # Javascript
 Exercices de Javascript à la formation Becode
 
-Intro : [intro] (https://github.com/becodeorg/Swartz-promo-3/tree/master/Parcours/04-Javascript/exercices "link to intro") 
+Intro : [intro](https://github.com/becodeorg/Swartz-promo-3/tree/master/Parcours/04-Javascript/exercices "link to intro") 
 
 Exercice sur le DOM : https://github.com/becodeorg/Swartz-promo-3/blob/master/Parcours/04-Javascript/exercices-DOM/exercice.md
 

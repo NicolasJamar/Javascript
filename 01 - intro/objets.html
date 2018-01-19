@@ -54,7 +54,17 @@
         faire une fonction pour afficher les objets dont le niveau minimum est de 10
     */
 
-    var objets = [ {title : "", physic: 0, magic: 0}, ]
+    function objet (title, physic, magic, minLevel, avaible){
+        this.title = title;
+        this.physic = physic;
+        this.magic = magic;
+        this.minLevel = minLevel;
+        this.avaible = available;
+    } 
+
+    var épée = new objet ("épée", 54, 65, 89, true);
+    var hache = new objet ("hache", 54, 65, 89, true);
+    
 </script>
     
 </body>

@@ -54,16 +54,46 @@
         faire une fonction pour afficher les objets dont le niveau minimum est de 10
     */
 
-    function objet (title, physic, magic, minLevel, avaible){
+    function objet (title, physic, magic, minLevel, available){
         this.title = title;
         this.physic = physic;
         this.magic = magic;
         this.minLevel = minLevel;
-        this.avaible = available;
+        this.available = available;
     } 
 
-    var épée = new objet ("épée", 54, 65, 89, true);
-    var hache = new objet ("hache", 54, 65, 89, true);
+    var épée = new objet ("épée", 54, 65, 2, true);
+    var hache = new objet ("hache", 66, 69, 3, true);
+    var spectre = new objet ("spectre", 85, 98, 10, false);
+    var maillet = new objet ("maillet", 48, 29, 1, true);
+    var arc = new objet ("arc à flèches", 54, 88, 8, false);
+
+    var listeObjets = [épée, hache, spectre, maillet, arc]; 
+
+    //j'aurais pu mettre tous les objets dans une Array comme : 
+     // var objets = [ {title: 'épée', physic:54,...},
+     //                {title: 'hache', physic:66,...},
+     //                ...
+     //            ]
+
+    for(i=0; i<listeObjets.length; i++){
+
+    console.log(listeObjets[i].title)
+    }
+
+    console.log('=========');
+
+    for(var dispo in listeObjets){
+        if(listeObjets[dispo].available == true){
+            console.log(listeObjets[dispo]);
+        }
+    }
+
+    for(var dispo in listeObjets){
+        if(listeObjets[dispo].minLevel >=10){
+            console.log(listeObjets[dispo])
+        }
+    }
     
 </script>
     

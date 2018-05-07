@@ -1,3 +1,5 @@
+/*--- TODOLIST ---*/
+
 //express pour la gestion des routes -> GET, POST...
 //npm install ejs -> pour créer des fichiers HTML qui lisent du js (comme PHP)
 
@@ -11,7 +13,7 @@ var bodyParser = require('body-parser');
 //paramètres mongo
 var mongoStore = require('connect-mongo');
 var mgStore = mongoStore(session);
-//connection à mongodb
+//connexion à mongodb
 var mongoClient = require('mongodb').MongoClient;
 var url = 'mongodb://localhost:27017/test'
 

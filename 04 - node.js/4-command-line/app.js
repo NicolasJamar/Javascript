@@ -30,8 +30,8 @@ function getProfile(username){
 // const users = ["chalkers", "nicolasjamar", "davemcfarland"];
 
 const users = process.argv.slice(2);//'process' est le global object de Node js, idem que 'window' pour le browser
-									// 'argv' est une propriété de process. Les 2 premiers arguments renvoyés sont les chemins des fichiers
-									// donc on slice à partir du 3e élément du tableau renvoyé
+									// 'argv' est une propriété de process qui liste tous les arguments de process.
+									// Les 2 premiers arguments renvoyés sont les chemins des fichiers donc on slice à partir du 3e élément du tableau renvoyé
 
 users.forEach( username =>{  //--> peut s'écrire 'users.forEach(getProfile);' pcq on itère dans 1 paramètre et la function contient 1 paramètre
 	getProfile(username);
